@@ -1,7 +1,28 @@
-public class Helloworld {
+class MathUtils {
+    public int sum(int a, int b) {
+        return a + b;
+    }
+
+    public int sub(int a, int b) {
+        return a - b;
+    }
+    public float twice(float number) {
+        return number / 0.5f;
+    }
+
+
     public static void main(String[] args) {
-        System.out.println("HelloWorld");
-        System.out.print("HelloGoIt");
-        System.out.println("Ok");
+        MathUtils math = new MathUtils();
+
+        //Should be 5
+        System.out.println("math.sum(3, 2) = " + math.sum(3, 2));
+
+        //Should be 1
+        System.out.println("math.sub(3, 2) = " + math.sub(3, 2));
+
+        //Should be 14
+        System.out.println("math.twice(7f) = " + math.twice(7));
+
+
     }
 }
